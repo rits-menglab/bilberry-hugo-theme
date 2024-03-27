@@ -120,3 +120,9 @@ $footer-headline-color: {{ .Param "dkFooterHeadlineColor" | default "darken(inve
 // Base theme styling
 @import 'bilberry-hugo-theme';
 }
+
+.bootstrap {
+  @import 'bootstrap';
+  @import 'bootstrap-theme';
+  @import 'style';
+}
