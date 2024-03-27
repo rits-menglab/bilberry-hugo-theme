@@ -6,10 +6,10 @@
         content: "";
         display: block;
         position: absolute;
+        top: 90px;
         left: 50px;
-        bottom: 50px;
         width: 2px;
-        height: 100%;
+        height: calc(100% - 90px);
         background: $connection-line-color;
         z-index: 1;
     }
