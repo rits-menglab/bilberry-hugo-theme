@@ -1038,4 +1038,12 @@ Many thanks go to these wonderful [people](https://github.com/Lednerb/bilberry-h
 
 ## License
 
-The Bilberry Hugo theme is licensed under the MIT license.
+The Bilberry Hugo theme is licensed under the MIT license.0
+
+static/fontsに存在する以下のファイルは[Koruri Font](https://koruri.github.io/)を改変・サブセット化したもので Apache License v2.0 の下で公開されます。
+
+- Koruri-Regular.eot
+- Koruri-Regular.svg
+- Koruri-Regular.ttf
+- Koruri-Regular.woff
+- Koruri-Regular.woff2 
