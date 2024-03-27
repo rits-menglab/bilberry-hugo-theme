@@ -20,7 +20,7 @@ other = "検索 ..."
 other = "検索結果がありません。"
 
 [olderPosts]
-other = "古いの投稿"
+other = "古い投稿"
 
 [newerPosts]
 other = "新しい投稿"
@@ -29,7 +29,7 @@ other = "新しい投稿"
 other = "続きを読む"
 
 [otherLanguages]
-other = "他の言語"
+other = "Other languages"
 
 [readingTime]
 other = "約{{.Count}}分で読めます"
