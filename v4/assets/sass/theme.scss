@@ -53,12 +53,12 @@ $footer-headline-color: {{ .Param "footerHeadlineColor" | default "#444" }};
 }
 
 // Dependencies
-@import '../../assets/sass/_vendor/normalize.scss';
-@import '../../assets/sass/_vendor/skeleton.scss';
-@import '../../assets/sass/_vendor/flexslider.scss';
-@import '../../assets/sass/_vendor/dimbox.scss';
-@import '../../assets/sass/_vendor/tooltipster.scss';
-@import '../../assets/sass/_vendor/tooltipster-sideTip-light.scss';
+@import '_vendor/normalize.scss';
+@import '_vendor/skeleton.scss';
+@import '_vendor/flexslider.scss';
+@import '_vendor/dimbox.scss';
+@import '_vendor/tooltipster.scss';
+@import '_vendor/tooltipster-sideTip-light.scss';
 @import 'fontface';
 
 // Base theme styling
@@ -109,12 +109,12 @@ $footer-headline-color: {{ .Param "dkFooterHeadlineColor" | default "darken(inve
 }
 
 // Dependencies
-@import '../../assets/sass/_vendor/normalize.scss';
-@import '../../assets/sass/_vendor/skeleton.scss';
-@import '../../assets/sass/_vendor/flexslider.scss';
-@import '../../assets/sass/_vendor/dimbox.scss';
-@import '../../assets/sass/_vendor/tooltipster.scss';
-@import '../../assets/sass/_vendor/tooltipster-sideTip-light.scss';
+@import '_vendor/normalize.scss';
+@import '_vendor/skeleton.scss';
+@import '_vendor/flexslider.scss';
+@import '_vendor/dimbox.scss';
+@import '_vendor/tooltipster.scss';
+@import '_vendor/tooltipster-sideTip-light.scss';
 @import 'fontface';
 
 // Base theme styling
