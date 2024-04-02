@@ -171,7 +171,7 @@
   font-display: swap;
 }
 
-/* Koruri-Regular - JIS第1水準＋常用漢字＋その他でまとめると（3759字）を参考にサブセット済み ref. https://u-618.org/webfont-subset/ */
+/* Koruri - JIS第1水準＋常用漢字＋その他でまとめると（3759字）を参考にサブセット済み ref. https://u-618.org/webfont-subset/ */
 @font-face {
   font-family: 'Koruri';
   font-style: normal;
@@ -188,6 +188,26 @@
     url('fonts/Koruri-Regular.ttf') format('truetype'),
     /* Safari, Android, iOS */
     url('fonts/Koruri-Regular.svg#Koruri-Regular') format('svg');
+  /* Legacy iOS */
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Koruri';
+  font-style: normal;
+  font-weight: 700;
+  src: url('fonts/Koruri-Bold.eot');
+  /* IE9 Compat Modes */
+  src: local(''),
+    url('fonts/Koruri-Bold.eot?#iefix') format('embedded-opentype'),
+    /* IE6-IE8 */
+    url('fonts/Koruri-Bold.woff2') format('woff2'),
+    /* Super Modern Browsers */
+    url('fonts/Koruri-Bold.woff') format('woff'),
+    /* Modern Browsers */
+    url('fonts/Koruri-Bold.ttf') format('truetype'),
+    /* Safari, Android, iOS */
+    url('fonts/Koruri-Bold.svg#Koruri-Bold') format('svg');
   /* Legacy iOS */
   font-display: swap;
 }
