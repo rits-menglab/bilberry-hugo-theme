@@ -33,7 +33,24 @@
             </ul>
         </div>
         {{ end }}
-
+        
+        {{ if and .Site.Taxonomies.categories (gt ( .Site.Params.amountCategoriesInFooter | default 7 ) 0 ) }}
+        <div class="archives">
+            {{ with .Site.GetPage "/archives" }}
+            <a href="{{ .Permalink }}"><strong>{{ i18n "archive" }}</strong></a>
+            {{ end }}
+            <ul>
+                {{ range $order, $taxonomy := (first ( .Site.Params.amountArchivesInFooter | default 7 ) .Site.Taxonomies.archives.Alphabetical.Reverse) }}
+                <li>
+                    {{ with $.Site.GetPage (printf "/archives/%s" $taxonomy.Name) }}
+                        <a href="{{ .Permalink }}">{{ .Title }} ({{ $taxonomy.Count }})</a>
+                    {{ end }}
+                </li>
+                {{ end }}
+            </ul>
+        </div>
+        {{ end }}
+                
         <div class="right">
             {{ if .Site.Params.showSocialMedia | default true }}
             <div class="external-profiles">
