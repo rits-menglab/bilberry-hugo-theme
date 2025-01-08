@@ -5,17 +5,16 @@
 [![Hugo Themes](https://img.shields.io/badge/Hugo_Themes-@Bilberry-ff4088)](https://themes.gohugo.io/themes/bilberry-hugo-theme/)
 
 [![Build GH-Pages](https://github.com/Lednerb/bilberry-hugo-theme/workflows/Update%20GitHub%20Pages/badge.svg)](https://github.com/Lednerb/bilberry-hugo-theme/deployments/activity_log?environment=github-pages)
-[![Contributors](https://img.shields.io/badge/contributors-48-orange.svg?style=flat-square)](#contributors)
+[![Contributors](https://img.shields.io/badge/contributors-52-orange.svg?style=flat-square)](#contributors)
 [![License](https://img.shields.io/github/license/Lednerb/bilberry-hugo-theme.svg?style=flat-square)](https://github.com/Lednerb/bilberry-hugo-theme/blob/master/LICENSE.md)
 
 ----
 
 This guide is for the `v4` version. For `v3`, please use this [guide](../v3-README.md).
 
-**IMPORTANT** `v3` will be supported until **August 31, 2024**. Only critical bugs will be fixed during this period, and no
-new features will be implemented. If you want to migrate from `v3` to `v4`, please read the migration [guide](v4-migration-guide.md).
+**IMPORTANT** `v3` is no longer supported. If you want to migrate from `v3` to `v4`, please read the migration [guide](../v4/v4-migration-guide.md).
 
-For those who want to contribute to or customize the Bilberry Hugo theme, please see the developer [guide](v4-developer-guide.md).
+For those who want to contribute to or customize the Bilberry Hugo theme, please see the developer [guide](../v4/v4-developer-guide.md).
 
 ----
 
@@ -697,18 +696,13 @@ The second option is to use the `audio` shortcode within markdown content in a p
 
 Bilberry theme comes with built-in support for both v3 and v4
 of [Google Analytics](https://analytics.google.com/analytics/web/).
-You should set the value of the `googleAnalytics` property in the `hugo.toml` file to enable it.
+To enable it, set the value of the `services.googleAnalytics.ID` property in the `hugo.toml`.
 
-Such value for Universal Analytics v3 is prefixed with the `UA` letters.
-So, suppose you migrate your existing website to the Bilberry theme, and your website is already tracked in Universal
-Analytics, given that the corresponding property was created before October 14, 2020.
-In that case, you should continue using the v3 value in the `hugo.toml` file.
-However given that Universal Analytics will no longer process new data in standard properties beginning July 1, 2023, you
-will have to create a Google Analytics v4 property linked to your v3 property.
-
-If you created your property after October 14, 2020, you're likely using a Google Analytics v4 property already, and the
-value for such property is prefixed with the `G` letter.
-In that case, you should use the v4 value in the `hugo.toml` file.
+```yaml
+[services]
+  [services.googleAnalytics]
+    ID = 'G-XXXXXXXXXX'
+```
 
 ### Comments
 
